@@ -23,19 +23,28 @@
         </nav>
     </header>
 
-    <div class="cart-button" aria-label="Корзина" aria-expanded="false" aria-controls="cart">
-        <img src="../assets/cart.png">
-    </div>
+    <main class="auth">
+        <h1>Регистрация</h1>
 
-    <main class="main-shop"></main>
+        <form class="auth-form" action="">
+            <label for="">
+                Имя пользователя:
+                <input type="text">
+            </label>
 
-    <aside class="cart" id="cart" aria-labelledby="cart-title" inert>
-        <button class="cart-close" aria-label="Закрыть корзину">X</button>
-        <h3 id="cart-title">Корзина</h3>
-        <ul class="cart-content"></ul>
-        <p class="cart-total" aria-live="polite"></p>
-    </aside>
+            <label for="">
+                Почта:
+                <input type="email">
+            </label>
 
-    <script src='../script.js'></script>
-</body>
+            <label for="">
+                Пароль:
+                <input type="password">
+            </label>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+
+    </main>
+    </body>
 </html>
