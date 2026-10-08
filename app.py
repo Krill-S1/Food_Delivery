@@ -4,10 +4,7 @@ from pathlib import Path
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from flask import Flask, jsonify
-from dotenv import load_dotenv
 
-load_dotenv()
-print(os.getenv("DB_PASSWORD"))
 def load_env_file(path = '.env'):
     env_file = Path(__file__).parent / path
 
